@@ -239,8 +239,8 @@ export default function Home() {
   useEffect(() => {
     const initialize = async () => {
       try {
-        const token = Cookies.get("session_token");
-        const userRole = Cookies.get("userRole");
+        const token = Cookies.get("apar_session_token");
+        const userRole = Cookies.get("apar_userRole");
 
         if (token && userRole) {
           if (userRole === "admin") {
@@ -291,8 +291,8 @@ export default function Home() {
         const { role, student } = res.data.data;
 
         if (role === "admin") {
-          Cookies.set("session_token", "admin-token");
-          Cookies.set("userRole", "admin");
+          Cookies.set("apar_session_token", "admin-token");
+          Cookies.set("apar_userRole", "admin");
 
           router.replace("/admin/dashboard");
           return;
@@ -315,8 +315,8 @@ export default function Home() {
           return;
         }
 
-        Cookies.set("session_token", "student-token");
-        Cookies.set("userRole", "student");
+        Cookies.set("apar_session_token", "student-token");
+        Cookies.set("apar_userRole", "student");
 
         sessionStorage.setItem("user", JSON.stringify(student));
 

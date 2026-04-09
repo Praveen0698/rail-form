@@ -13,7 +13,7 @@ export async function GET(
 
     const adminRollNo = process.env.ADMIN_ROLL_NO;
 
-    if (rollNo === adminRollNo) {
+    if (rollNo?.toLocaleLowerCase() === adminRollNo?.toLocaleLowerCase()) {
       return NextResponse.json(
         { success: true, data: { role: "admin" } },
         { status: 200 },

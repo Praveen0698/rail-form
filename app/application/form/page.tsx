@@ -14,10 +14,10 @@ export default function JoiningReportForm() {
   const router = useRouter();
 
   useEffect(() => {
-    const token = Cookies.get("session_token");
-    const role = Cookies.get("userRole");
+    const token = Cookies.get("apar_session_token");
+    const role = Cookies.get("apar_userRole");
     if (!token || role !== "student") {
-      router.replace("/");
+      router.replace("/apar");
     }
   }, [router]);
 
@@ -55,7 +55,7 @@ export default function JoiningReportForm() {
     { key: "exServicemen", label: "Ex-Servicemen" },
     { key: "panNumber", label: "PAN Number" },
     { key: "voterIdCardNumber", label: "Voter ID Card Number" },
-    { key: "rationCardNumber", label: "Ration Card Number" },
+    { key: "aadharCardNumber", label: "Aadhar Card Number" },
     { key: "height", label: "Height" },
     { key: "maritalStatus", label: "Marital Status" },
     { key: "presentHouseNo", label: "Present House No." },
@@ -131,7 +131,7 @@ export default function JoiningReportForm() {
     exServicemen: "",
     panNumber: "",
     voterIdCardNumber: "",
-    rationCardNumber: "",
+    aadharCardNumber: "",
     identificationMark1: "",
     identificationMark2: "",
     height: "",

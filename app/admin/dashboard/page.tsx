@@ -412,10 +412,10 @@ const Dashboard = () => {
   const router = useRouter();
 
   const handleLogout = () => {
-    Cookies.remove("session_token", { path: "/" });
-    Cookies.remove("userRole", { path: "/" });
+    Cookies.remove("apar_session_token", { path: "/" });
+    Cookies.remove("apar_userRole", { path: "/" });
     sessionStorage.clear();
-    router.replace("/");
+    router.replace("/apar");
   };
 
   const fetchStudents = useCallback(async () => {
