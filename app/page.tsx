@@ -398,7 +398,7 @@ export default function Home() {
                 noValidate
                 className="flex flex-col gap-5"
               >
-                <Field id="rollNo" label="Roll Number" required>
+                <Field id="rollNo" label="User Id" required>
                   <input
                     id="rollNo"
                     type="text"
@@ -413,7 +413,7 @@ export default function Home() {
 
                 <Field
                   id="dob"
-                  label="Date of Birth"
+                  label="Password"
                   required
                   hint="As per your registration records"
                 >

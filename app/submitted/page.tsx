@@ -96,20 +96,20 @@ export default function SubmittedPage() {
 
               <div className="border-t border-dashed border-gray-200 my-5" />
 
-              {/* Info box */}
-              <div className="bg-blue-50 border border-blue-100 border-l-4 border-l-[#003580] px-4 py-3.5 mb-6">
-                <p className="text-xs text-[#003580] font-semibold mb-1 uppercase tracking-wide">
-                  What happens next?
-                </p>
-                <p className="text-[11.5px] text-gray-600 leading-relaxed">
-                  The Authorizing Officer will review and counter-approve your
-                  submission. Your{" "}
-                  <span className="font-semibold text-gray-700">
-                    Permanent Employee Number (PEN)
+              {/* IPAS ID Section */}
+              <div className="border border-[#003580]/20 bg-blue-50/50 px-5 py-4 mb-5">
+                {/* Notice text */}
+                <p className="text-[11px] text-gray-600 leading-relaxed mb-4">
+                  Your HRMS have successfully submitted, kindly receive your{" "}
+                  <span className="font-semibold text-[#003580]">
+                    11 digit IPAS ID
                   </span>{" "}
-                  will be issued once the process is complete.
+                  (Integrated Payroll and Accounting System ID) number from the
+                  Accounts Department, ECoR, Bhubaneswar.
                 </p>
               </div>
+
+              <div className="border-t border-dashed border-gray-200 my-5" />
 
               {/* Countdown box */}
               <div className="border border-gray-200 bg-gray-50 px-5 py-4">
