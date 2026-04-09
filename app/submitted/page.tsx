@@ -17,8 +17,8 @@ export default function SubmittedPage() {
         if (prev <= 1) {
           clearInterval(interval);
           window.location.href = REDIRECT_URL;
-          Cookies.remove("session_token", { path: "/" });
-          Cookies.remove("userRole", { path: "/" });
+          Cookies.remove("apar_session_token", { path: "/" });
+          Cookies.remove("apar_userRole", { path: "/" });
           sessionStorage.clear();
           return 0;
         }

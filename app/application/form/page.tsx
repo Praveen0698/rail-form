@@ -17,7 +17,7 @@ export default function JoiningReportForm() {
     const token = Cookies.get("apar_session_token");
     const role = Cookies.get("apar_userRole");
     if (!token || role !== "student") {
-      router.replace("/apar");
+      router.replace("/");
     }
   }, [router]);
 
